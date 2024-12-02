@@ -1,0 +1,162 @@
+body {
+    font-family: 'Geneva', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #949995;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 160px; 
+    flex-wrap: wrap;
+}
+
+.top {
+    max-width: 800px;
+    background: #333;
+    padding: 20px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.1);
+    flex: 1;
+}
+
+.picture {
+    max-width: 350px;
+    background: #333;
+    padding: 5px;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.1);
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(226, 226, 226, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+    border: 2px solid #333;
+}
+h2 {
+    text-align: center;
+    color: #0e0000;
+}
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SKILLS, .WORK {
+    flex: 1;
+    margin: 0 10px;
+}
+
+body{
+    background-image: url("E.jpeg");
+    background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .picture {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .SKILLS, .WORK {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .top h3 {
+        font-size: 20px;
+    }
+
+    .top p {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    }
+}
